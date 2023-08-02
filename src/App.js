@@ -3,6 +3,10 @@ import Navbar from './components/Navbar';
 import Header from './components/Header';
 import  { Landingpage } from './Pages/Landingpage';
 import Landing from './Pages/Home';
+// import ContactUs from './Pages/ContactUs';
+
+
+
 
 
 
@@ -13,7 +17,9 @@ const App = () => {
       {/* <Navbar /> */}
       <Landingpage />
       {/* <Landing /> */}
-    </div>
+      {/* <ContactUs /> */}
+    
+        </div>
   );
 };
 

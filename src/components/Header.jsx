@@ -14,7 +14,8 @@ export default function Header() {
         {/* For large and Medium-sized Screen */}
         <div className="flex justify-between ">
           <div className="hidden sm:flex flex-row items-center space-x-6">
-            <svg
+            <a href="https://twitter.com/ACE_WebSolution">
+              <svg
               className=" focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 cursor-pointer"
               width={24}
               height={24}
@@ -28,8 +29,9 @@ export default function Header() {
                 strokeLinecap="round"
                 strokeLinejoin="round"
               />
-            </svg>
-            <svg
+            </svg></a>
+            <a href="https://www.facebook.com/people/Ace-Web-Solution/100094003217233/">
+              <svg
               className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 cursor-pointer"
               width={24}
               height={24}
@@ -43,7 +45,8 @@ export default function Header() {
                 strokeLinecap="round"
                 strokeLinejoin="round"
               />
-            </svg>
+            </svg></a>
+            <a href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2F95768399%2Fadmin%2Ffeed%2Fposts%2F%3FfeedType%3Dfollowing">
             <svg
               className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 cursor-pointer"
               width={24}
@@ -71,7 +74,9 @@ export default function Header() {
                 strokeLinejoin="round"
               />
             </svg>
-            <svg
+            </a>
+            <a href="https://www.instagram.com/ace_web_solutions_/">
+              <svg
               className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 cursor-pointer"
               width={24}
               height={24}
@@ -97,7 +102,7 @@ export default function Header() {
                 strokeLinecap="round"
                 strokeLinejoin="round"
               />
-            </svg>
+            </svg></a>
           </div>
           <div className="flex   items-center">
             <img src={Logo} alt="OvonRueden" width={52} height={32} />
@@ -105,16 +110,16 @@ export default function Header() {
 
           <div className="hidden sm:flex flex-row space-x-4">
             <button className="rounded-md flex space-x-2 w-24 h-10 font-normal text-sm leading-3 text-indigo-700 bg-white border border-indigo-700 focus:outline-none focus:bg-gray-200 hover:bg-gray-200 duration-150 justify-center items-center">
-              Home
+            <a href="https://acewebsolution.com"> Home</a>
             </button>
             <button className="rounded-md flex space-x-2 w-24 h-10 font-normal text-sm leading-3 text-white bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 focus:bg-indigo-600 hover:bg-indigo-600 duration-150 justify-center items-center">
-              Contact Us
+              <a href="https://acewebsolution.com/contact.html"> Contact Us</a>
             </button>
            
             <Menu as="div" className="relative inline-block text-left">
       <div>
         <Menu.Button className="rounded-md flex space-x-2 w-24 h-10 font-normal text-sm leading-3 text-white bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 focus:bg-indigo-600 hover:bg-indigo-600 duration-150 justify-center items-center">
-          Services
+        <a href="https://acewebsolution.com/service.html"> Services</a>
           <FontAwesomeIcon icon="fa-solid fa-chevron-down"  className="-mr-1 h-5 w-5 text-gray-400" aria-hidden="true" />
         </Menu.Button>
       </div>
@@ -133,57 +138,82 @@ export default function Header() {
             <Menu.Item>
               {({ active }) => (
                 <a
-                  href="#"
+                  href="https://acewebsolution.com/website.html"
                   className={classNames(
                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                     'block px-4 py-2 text-sm'
                   )}
                 >
-                  Account settings
+                  Web Development
                 </a>
               )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
                 <a
-                  href="#"
+                  href="https://acewebsolution.com/seo.html"
                   className={classNames(
                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                     'block px-4 py-2 text-sm'
                   )}
                 >
-                  Support
+                  Search Engine Optimization
                 </a>
               )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
                 <a
-                  href="#"
+                  href="https://acewebsolution.com/uiux.html"
                   className={classNames(
                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                     'block px-4 py-2 text-sm'
                   )}
                 >
-                  License
+                  UI/UX Design
                 </a>
               )}
             </Menu.Item>
-            <form method="POST" action="#">
-              <Menu.Item>
-                {({ active }) => (
-                  <button
-                    type="submit"
-                    className={classNames(
-                      active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                      'block w-full px-4 py-2 text-left text-sm'
-                    )}
-                  >
-                    Sign out
-                  </button>
-                )}
-              </Menu.Item>
-            </form>
+            <Menu.Item>
+              {({ active }) => (
+                <a
+                  href="https://acewebsolution.com/digitalmaketing.html"
+                  className={classNames(
+                    active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                    'block px-4 py-2 text-sm'
+                  )}
+                >
+                  Digital Marketing
+                </a>
+              )}
+            </Menu.Item>
+            <Menu.Item>
+              {({ active }) => (
+                <a
+                  href="https://acewebsolution.com/app.html"
+                  className={classNames(
+                    active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                    'block px-4 py-2 text-sm'
+                  )}
+                >
+                  APP Development
+                </a>
+              )}
+            </Menu.Item>
+            <Menu.Item>
+              {({ active }) => (
+                <a
+                  href="https://acewebsolution.com/smm.html"
+                  className={classNames(
+                    active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                    'block px-4 py-2 text-sm'
+                  )}
+                >
+                  Social Media Marketing
+                </a>
+              )}
+            </Menu.Item>
+            
           </div>
         </Menu.Items>
       </Transition>
@@ -191,7 +221,7 @@ export default function Header() {
     <Menu as="div" className="relative inline-block text-left">
       <div>
         <Menu.Button className="rounded-md flex space-x-2 w-24 h-10 font-normal text-sm leading-3 text-white bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 focus:bg-indigo-600 hover:bg-indigo-600 duration-150 justify-center items-center">
-          About Us
+        <a href="https://acewebsolution.com/about.html">About Us</a>
           <FontAwesomeIcon icon="fa-solid fa-chevron-down"  className="-mr-1 h-5 w-5 text-gray-400" aria-hidden="true" />
         </Menu.Button>
       </div>
@@ -210,57 +240,43 @@ export default function Header() {
             <Menu.Item>
               {({ active }) => (
                 <a
-                  href="#"
+                  href="https://acewebsolution.com/who-we-are.html"
                   className={classNames(
                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                     'block px-4 py-2 text-sm'
                   )}
                 >
-                  Account settings
+                  Who We Are
                 </a>
               )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
                 <a
-                  href="#"
+                  href="https://acewebsolution.com/team.html"
                   className={classNames(
                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                     'block px-4 py-2 text-sm'
                   )}
                 >
-                  Support
+                  Our Team
                 </a>
               )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
                 <a
-                  href="#"
+                  href="https://acewebsolution.com/testimonial.html"
                   className={classNames(
                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                     'block px-4 py-2 text-sm'
                   )}
                 >
-                  License
+                  Testimonial
                 </a>
               )}
             </Menu.Item>
-            <form method="POST" action="#">
-              <Menu.Item>
-                {({ active }) => (
-                  <button
-                    type="submit"
-                    className={classNames(
-                      active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                      'block w-full px-4 py-2 text-left text-sm'
-                    )}
-                  >
-                    Sign out
-                  </button>
-                )}
-              </Menu.Item>
-            </form>
+            
           </div>
         </Menu.Items>
       </Transition>
@@ -425,18 +441,13 @@ export default function Header() {
             Home
           </button>
           <button className="rounded-md flex space-x-2 w-full h-10 font-normal text-sm leading-3 text-indigo-700 bg-indigo-600 bg-opacity-0 hover:opacity-100 duration-100 border border-indigo-700 focus:outline-none focus:bg-gray-200 hover:bg-gray-200 duration-150 justify-center items-center">
-            Contact Us
+          <a href="https://acewebsolution.com/contact.html"> Contact Us</a>
           </button>
-          {/* <button >
-            Services
-          </button> */}
-          {/* <button className="rounded-md flex space-x-2 w-full h-10 font-normal text-sm leading-3 text-white bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 focus:bg-indigo-600 hover:bg-indigo-600 duration-150 justify-center items-center">
-            About Us
-          </button> */}
+          
           <Menu as="div" >
       <div>
         <Menu.Button className="rounded-md flex space-x-2 w-full h-10 font-normal text-sm leading-3 text-indigo-700 bg-indigo-600 bg-opacity-0 hover:opacity-100 duration-100 border border-indigo-700 focus:outline-none focus:bg-gray-200 hover:bg-gray-200 duration-150 justify-center items-center">
-          Services
+          <a href="https://acewebsolution.com/service.html"> Services</a>
           <FontAwesomeIcon icon="fa-solid fa-chevron-down"  className="-mr-1 h-5 w-5 text-gray-400" aria-hidden="true" />
         </Menu.Button>
       </div>
@@ -455,57 +466,69 @@ export default function Header() {
             <Menu.Item>
               {({ active }) => (
                 <a
-                  href="#"
+                  href="https://acewebsolution.com/website.html"
                   className={classNames(
                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                     'block px-4 py-2 text-sm'
                   )}
                 >
-                  Account settings
+                  Web Development
                 </a>
               )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
                 <a
-                  href="#"
+                  href="https://acewebsolution.com/seo.html"
                   className={classNames(
                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                     'block px-4 py-2 text-sm'
                   )}
                 >
-                  Support
+                  Search Engine Optimization
                 </a>
               )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
                 <a
-                  href="#"
+                  href="https://acewebsolution.com/uiux.html"
                   className={classNames(
                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                     'block px-4 py-2 text-sm'
                   )}
                 >
-                  License
+                  UI/UX Design
                 </a>
               )}
             </Menu.Item>
-            <form method="POST" action="#">
-              <Menu.Item>
-                {({ active }) => (
-                  <button
-                    type="submit"
-                    className={classNames(
-                      active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                      'block w-full px-4 py-2 text-left text-sm'
-                    )}
-                  >
-                    Sign out
-                  </button>
-                )}
-              </Menu.Item>
-            </form>
+            <Menu.Item>
+              {({ active }) => (
+                <a
+                  href="https://acewebsolution.com/digitalmaketing.html"
+                  className={classNames(
+                    active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                    'block px-4 py-2 text-sm'
+                  )}
+                >
+                  Digital Marketing
+                </a>
+              )}
+            </Menu.Item>
+            <Menu.Item>
+              {({ active }) => (
+                <a
+                  href="https://acewebsolution.com/app.html"
+                  className={classNames(
+                    active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                    'block px-4 py-2 text-sm'
+                  )}
+                >
+                  APP Development
+                </a>
+              )}
+            </Menu.Item>
+            
           </div>
         </Menu.Items>
       </Transition>
@@ -513,7 +536,7 @@ export default function Header() {
     <Menu as="div" >
       <div>
         <Menu.Button className="rounded-md flex space-x-2 w-full h-10 font-normal text-sm leading-3 text-indigo-700 bg-indigo-600 bg-opacity-0 hover:opacity-100 duration-100 border border-indigo-700 focus:outline-none focus:bg-gray-200 hover:bg-gray-200 duration-150 justify-center items-center">
-          About Us
+          <a href="https://acewebsolution.com/about.html">About Us</a>
           <FontAwesomeIcon icon="fa-solid fa-chevron-down"  className="-mr-1 h-5 w-5 text-gray-400" aria-hidden="true" />
         </Menu.Button>
       </div>
@@ -532,57 +555,43 @@ export default function Header() {
             <Menu.Item>
               {({ active }) => (
                 <a
-                  href="#"
+                  href="https://acewebsolution.com/who-we-are.html"
                   className={classNames(
                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                     'block px-4 py-2 text-sm'
                   )}
                 >
-                  Account settings
+                  Who We Are
                 </a>
               )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
                 <a
-                  href="#"
+                  href="https://acewebsolution.com/team.html"
                   className={classNames(
                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                     'block px-4 py-2 text-sm'
                   )}
                 >
-                  Support
+                  Our Team
                 </a>
               )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
                 <a
-                  href="#"
+                  href="https://acewebsolution.com/testimonial.html"
                   className={classNames(
                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                     'block px-4 py-2 text-sm'
                   )}
                 >
-                  License
+                  Testimonial
                 </a>
               )}
             </Menu.Item>
-            <form method="POST" action="#">
-              <Menu.Item>
-                {({ active }) => (
-                  <button
-                    type="submit"
-                    className={classNames(
-                      active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                      'block w-full px-4 py-2 text-left text-sm'
-                    )}
-                  >
-                    Sign out
-                  </button>
-                )}
-              </Menu.Item>
-            </form>
+            
           </div>
         </Menu.Items>
       </Transition>
